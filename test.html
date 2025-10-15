@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - MFA</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      background: #1e293b;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 22px;
+      margin: 10px 0 5px;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-title {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 4px;
+      text-align: left;
+    }
+
+    .skills {
+      text-align: left;
+    }
+
+    .skill {
+      margin-bottom: 12px;
+    }
+
+    .skill-name {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .progress-bar {
+      background: rgba(255,255,255,0.2);
+      border-radius: 6px;
+      overflow: hidden;
+      height: 8px;
+    }
+
+    .progress {
+      background: #38bdf8;
+      height: 100%;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    .progress[data-value="90"] { width: 90%; }
+    .progress[data-value="80"] { width: 80%; }
+    .progress[data-value="70"] { width: 70%; }
+    .progress[data-value="60"] { width: 60%; }
+
+    .main {
+      padding: 30px;
+    }
+
+    .main h2 {
+      font-size: 20px;
+      color: #1e293b;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    .main h3 {
+      font-size: 16px;
+      margin: 10px 0 2px;
+      color: #111827;
+    }
+
+    .main p {
+      font-size: 14px;
+      margin: 2px 0 10px;
+      color: #444;
+    }
+
+    .main ul {
+      margin: 6px 0 16px 20px;
+    }
+
+    .main ul li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    /* === PRINT STYLING === */
+    @media print {
+      body {
+        background: #fff !important;
+      }
+      .container {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        page-break-inside: avoid;
+      }
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="C:\Users\ASUS\Pictures\Saved Pictures\riz.jpg" alt="Foto Profil">
+      <h1>MUHAMAD FARIZ AKBAR</h1>
+      
+      <div class="contact">
+        <p>📧 muhamadfariz251@gmail.com</p>
+        <p>📞 +62 895-1643-2571</p>
+        <p>🔗 linkedin.com/in/muhamad-fariz-akbar-a1aab1380</p>
+        <p>📍 Bogor, Indonesia</p>
+      </div>
+
+      <div class="section-title">Keterampilan</div>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-name">Microsoft Office</div>
+          <div class="progress-bar">
+            <div class="progress" data-value="90"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Bahasa Pemograman</div>
+          <div class="progress-bar">
+            <div class="progress" data-value="80"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Data Base</div>
+          <div class="progress-bar">
+            <div class="progress" data-value="70"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Editing</div>
+          <div class="progress-bar">
+            <div class="progress" data-value="60"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">Sertifikasi</div>
+      <ul>
+        <li>Certified Toefl – 2025</li>
+        <li>Certified Software Development – 2024</li>
+         <li>Sertifikat Fakultas Teknik & Informatika
+IT Bootcamp "Soft Development" | 2024</li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <h2>Ringkasan Profesional</h2>
+      <p>Lulusan D3 Sistem Informasi dengan pemahaman dasar yang kuat di bidang analisis sistem, 
+        basis data, pemrograman, dan manajemen teknologi informasi. Terampil dalam mengelola data, 
+        mendukung implementasi sistem, serta memberikan solusi berbasis teknologi untuk kebutuhan organisasi.
+         Memiliki pengalaman dalam administrasi data, pembuatan laporan, 
+         dan penggunaan software aplikasi perkantoran maupun tools IT pendukung. 
+         Siap berkontribusi sebagai staf IT,
+         admin sistem, maupun support teknis dengan kemampuan kerja tim,
+          ketelitian, dan orientasi pada hasil.</p>
+
+      <h2>Pengalaman Kerja</h2>
+      <h3>PT Sumber Alfaria Trijaya Tbk – Crew Store</h3>
+      <p><em>April 2021 - November 2021 </em></p>
+      <ul>
+        <li>Pelayanan Konsumen - Melayani pembeli dengan ramah dan sopan, - Membantu konsumen menemukan produk yang dicari.</li>
+        <li>Kasir (Cashier) - Mengoperasikan mesin kasir dan sistem POS. - Menghitung dan menerima pembayaran (tunai, kartu debit/kredit, e-wallet).</li>
+        <li>Stok dan Gudang - Menerima barang dari supplier. - Mengecek jumlah dan kondisi barang yang datang. - Menyimpan dan menata barang di gudang dengan rapi.</li>
+      </ul>
+
+      <h3>Rafalini – Admin Online Shop</h3>
+      <p><em>Februari 2020 – Desember 2020</em></p>
+      <ul>
+        <li>Mengelola Order - Menerima & memproses pesanan dari berbagai platform (Shopee, Tokopedia, Instagram, dll). - Memastikan data pesanan benar sebelum dikirim.</li>
+        <li>Customer Service (CS) - Membalas chat/pertanyaan konsumen dengan cepat & ramah. - Memberikan informasi produk, promo, dan status pesanan.</li>
+        <li>Administrasi & Laporan - Mencatat transaksi penjualan. - Membuat laporan harian/mingguan penjualan & stok.</li>
+      </ul>
+
+      <h3>Kantor Pemilihan Umum Kota Bogor – Assisten Staff</h3>
+      <p><em>Oktober 2024 – Desember 2024</em></p>
+      <ul>
+        <li>Administrasi & Dokumentasi - Membantu mengarsipkan dokumen kepemiluan. - Menyusun surat, laporan, dan notulensi rapat. -
+            Menginput data ke sistem KPU.</li>
+        <li>Dukungan Teknis Kepemiluan - Membantu 
+            persiapan logistik pemilu (formulir, kotak suara, surat suara, dll). - 
+            Membantu distribusi dan pengecekan logistik. - Mendukung proses sosialisasi
+             pemilu kepada masyarakat.</li>
+         <li>Pelayanan Publik & Koordinasi - Memberikan informasi dasar kepada masyarakat terkait kepemiluan. -
+             Mendukung koordinasi dengan Panitia Pemilihan Kecamatan (PPK), PPS, dan stakeholder lainnya..</li>
+      </ul>
+        </ul>
+
+      <h2>Pendidikan</h2>
+      <p><strong>Universitas Bina Sarana Informatika</strong> – D3 Sistem Informasi</p>
+      <p><em>2022 – 2025</em></p>
+      <p><em>IPK 3.41/4.00</em></p>
+
+      <h2>Hobi</h2>
+      <p>Running</p>
+      <p>hiking</p>
+    </main>
+  </div>
+</body>
+</html>
